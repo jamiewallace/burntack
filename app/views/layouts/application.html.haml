@@ -1,9 +1,36 @@
 !!!
 %html
   %head
-    %title Sourdoughtracker
+    %title Burntack
     %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}
     = stylesheet_link_tag    "application", :media => "all"
     %link{href: "http://fonts.googleapis.com/css?family=Metrophobic", rel: "stylesheet", type: "text/css"}
+    %link{:href=>"//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css", :rel=>"stylesheet"}
+    %script{:src=>"//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"}
     = javascript_include_tag "application"
     = csrf_meta_tags
+
+
+    %body#customisation
+      .container.custom
+        %nav.navbar.navbar-default{:role => "navigation"}
+          .navbar-header
+            %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+              %span.sr-only Toggle navigation
+              %span.icon-bar
+              %span.icon-bar
+              %span.icon-bar
+            .navbar-brand
+              %a{:href => "#"} Burntack
+          #bs-example-navbar-collapse-1.collapse.navbar-collapse              
+            %ul.nav.navbar-nav.navbar-right
+              %li
+                %a{:href => "#"} Link
+              %li
+                %a{:href => "#"} Link
+              %li
+                %a{:href => "#"} Link
+              
+                 
+
+        =yield
