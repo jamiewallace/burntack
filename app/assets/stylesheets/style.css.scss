@@ -15,11 +15,11 @@
   margin-right: auto;
   margin-left: auto;
   font-family: 'Metrophobic', sans-serif;
-  color: white;
+  font-size: 16px;
 }
 
 nav.navbar.navbar-default {
-  background-color: rgba(92,33,27, 0.8);
+  background-color: rgb(3,99,34);
   border: 0px;
 }
 
@@ -27,7 +27,7 @@ ul.nav.navbar-nav.navbar-right {
   padding-top: 5px;
   font-size: 15px;
   a:hover {
-    color: orange;
+    color: rgb(193,245,83);
   }
   a {
     color: white;
@@ -37,21 +37,34 @@ ul.nav.navbar-nav.navbar-right {
 .navbar-brand {
   a {
     color: white;
-    font-size: 40px;
+    font-size: 30px;
   }
   a:hover {
-    color: orange;
+    color: rgb(193,245,83);
   }
   a:link {
     text-decoration: none;
   }
 }
 
-
-body {
-  background: url('/assets/homeimage2.jpg');
-  background-size: cover;
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
+
+img.map {
+  width: 50%;
+  height: auto;
+  border-radius: 5px;
+}
+// body {
+//   background-image: url('/assets/BTfromvegpatch.jpg'), url('/assets/snowybt.jpg');
+//   background-size: 100%;
+//   // background-repeat:no-repeat;
+//   background-position: left top, left bottom;
+// }
 
 
 
